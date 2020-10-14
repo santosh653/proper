@@ -4,8 +4,6 @@ arch:
 os: linux
 dist: xenial
 language: erlang
-before_install:
-    - if [ "$TRAVIS_ARCH" = "ppc64le" ]; then sudo apt-get update; sudo apt-get install rebar; fi
 
 
 script: make all
